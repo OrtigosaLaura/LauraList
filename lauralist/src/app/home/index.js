@@ -86,7 +86,7 @@ export default function Home() {
 
    const removeItem = itemId => {
     Alert.alert('Excluir produto?',
-    'Tem certeza dessa exclusão?',
+    'Confira a exclusão deste produto?',
     [
       {
        text: 'Sim', onPress: () => {
@@ -103,7 +103,7 @@ export default function Home() {
    }
 
    const removeAll = () => {
-    Alert.alert("Limpar Lista?", "Confirma a exclusão de todos os produtos ?",
+    Alert.alert("Limpar Lista?", "Confirma a exclusão de todos os produtos de sua lista?",
     [{
       text: 'Sim',
       onPress: () => { setItems([]) }
@@ -117,14 +117,14 @@ export default function Home() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ImageBackground
-      source={require('../../assets/background.jpg')}
+      source={require('../../assets/legumnesfundo.png')}
       resizeMode='repeat'
-      style={{ flex: 1, justifyContent: 'flex-start' }}
+      style={{ flex: 1, justifyContent: 'center' }}
       >
         <View style={styles.header}>
         <Text style={styles.title}>Lista de Produtos</Text>
         <View> 
-           <Ionicons name="trash" size={32} color="#fff" onPress={removeAll}/>
+           <Ionicons name="trash" size={32} color="#228B22" onPress={removeAll}/>
        </View>
       </View>
 
@@ -147,7 +147,7 @@ export default function Home() {
             <TextInput
                color="#fff"
                fontSize={18}
-               placeholderTextColor="#aeaeae"
+               placeholderTextColor="white"
                placeholder="Digite o nome do produto..."
                value={textInput}
                onChangeText={(text) => setTextInput(text)}

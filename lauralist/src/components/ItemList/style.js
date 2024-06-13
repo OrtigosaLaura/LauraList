@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
         padding: 15,
         elevation: 12,
         borderRadius: 7,
-        backgroundColor: '#000000c0',
+        backgroundColor: '#F5DEB3',
         borderWidth: 2,
         borderColor: 'white',
         marginVertical: 5,
@@ -15,19 +15,19 @@ export const styles = StyleSheet.create({
 
     },
     itemToBuy: {
-        color: '#fff',
+        color: '#228B22',
         fontSize: 22,
         textDecorationLine: 'none'
     },
     itemBought: {
-        color: '#fff',
+        color: 'red',
         fontSize: 22,
         textDecorationLine: 'line-throught'
     },
     actionIcon: {
         height: 40,
         width: 40,
-        backgroundColor: 'darkgreen',
+        backgroundColor: '#228B22',
         justifyContent: 'center',
         alignItems: 'center',
         marginLeft: 10,

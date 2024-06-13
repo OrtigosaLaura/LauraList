@@ -7,7 +7,7 @@ export default function Welcome() {
     <View style={styles.container}>
       <View style={styles.containerImage}>
       <Image 
-      source={require('../assets/nos.jpg')} 
+      source={require('../assets/logo.png')} 
       style={styles.logo} 
       />
       </View>
@@ -31,7 +31,7 @@ export default function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#228B22',
   },
   containerImage: {
     flex: 2,
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    backgroundColor: "#dadada",
+    backgroundColor: "white",
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
     paddingHorizontal: '5%',
@@ -59,12 +59,13 @@ const styles = StyleSheet.create({
     textAlign: 'center'
   },
   text: {
-    fontSize: 16,
+    fontSize: 17,
     color: 'gray',
+    textAlign: 'center'
   },
   button: {
     position: 'absolute',
-    backgroundColor: '#000',
+    backgroundColor: '#228B22',
     bottom: '15%',
     alignSelf: 'center',
     borderRadius: 50,
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 20,
-    color: '#fff',
+    color: 'white',
     fontWeight: 'bold',
   }
 });
