@@ -51,7 +51,7 @@ export default function Home() {
     //console.log(textInput);
     if (textInput == '') {
       Alert.alert('Ocorreu um problema :(',
-       'Por favor, informe o nome do produto');
+       'Por favor, informe o nome da tarefa');
     } else {
       const newItem = {
       id: Math.random(),
@@ -85,8 +85,8 @@ export default function Home() {
    }
 
    const removeItem = itemId => {
-    Alert.alert('Excluir produto?',
-    'Confira a exclusão deste produto?',
+    Alert.alert('Excluir tarefa?',
+    'Confira a exclusão dessa tarefa?',
     [
       {
        text: 'Sim', onPress: () => {
@@ -103,7 +103,7 @@ export default function Home() {
    }
 
    const removeAll = () => {
-    Alert.alert("Limpar Lista?", "Confirma a exclusão de todos os produtos de sua lista?",
+    Alert.alert("Limpar Lista?", "Confirma a exclusão de todos as tarefas de sua lista?",
     [{
       text: 'Sim',
       onPress: () => { setItems([]) }
@@ -117,14 +117,14 @@ export default function Home() {
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <ImageBackground
-      source={require('../../assets/legumnesfundo.png')}
+      source={require('../../assets/fundo10.png')}
       resizeMode='repeat'
       style={{ flex: 1, justifyContent: 'center' }}
       >
         <View style={styles.header}>
-        <Text style={styles.title}>Lista de Produtos</Text>
+        <Text style={styles.title}>Lista de Tarefas</Text>
         <View> 
-           <Ionicons name="trash" size={32} color="#228B22" onPress={removeAll}/>
+           <Ionicons name="trash" size={32} color="#7B68EE" onPress={removeAll}/>
        </View>
       </View>
 
@@ -148,7 +148,7 @@ export default function Home() {
                color="#fff"
                fontSize={18}
                placeholderTextColor="white"
-               placeholder="Digite o nome do produto..."
+               placeholder="Digite a tarefa..."
                value={textInput}
                onChangeText={(text) => setTextInput(text)}
             />

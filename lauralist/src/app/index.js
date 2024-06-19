@@ -7,17 +7,17 @@ export default function Welcome() {
     <View style={styles.container}>
       <View style={styles.containerImage}>
       <Image 
-      source={require('../assets/logo.png')} 
+      source={require('../assets/logo3.png')} 
       style={styles.logo} 
       />
       </View>
       <View style={styles.content}>
       <Text style={styles.title}> 
-      Market Laura List
+      Laura List
       </Text>
       <Text style={styles.text}>
-        Monte sua lista de compras e não esqueça mais 
-        o que precisa comprar no supermercado!!!
+        Monte sua lista de tarefas e não esqueça mais 
+       seus afazeres!!!
       </Text>
       <Link style={styles.button} href={"/home"}>
         <Text style={styles.buttonText}>Acessar</Text>
@@ -31,7 +31,7 @@ export default function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#228B22',
+    backgroundColor: '#7B68EE',
   },
   containerImage: {
     flex: 2,
@@ -57,6 +57,7 @@ const styles = StyleSheet.create({
     marginTop: 28,
     marginBottom: 20,
     textAlign: 'center'
+    
   },
   text: {
     fontSize: 17,
@@ -65,7 +66,7 @@ const styles = StyleSheet.create({
   },
   button: {
     position: 'absolute',
-    backgroundColor: '#228B22',
+    backgroundColor: '#7B68EE',
     bottom: '15%',
     alignSelf: 'center',
     borderRadius: 50,

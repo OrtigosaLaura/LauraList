@@ -6,14 +6,14 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#F5DEB3',
+        backgroundColor: '#B2DFEEc0',
         borderBottomLeftRadius: 30,
         borderBottomRightRadius: 30,
     },
     title: {
         fontSize: 26,
         fontWeight: 'bold',
-        color: '#228B22',
+        color: '#7B68EE',
 
     },
     footer: {
@@ -23,12 +23,12 @@ export const styles = StyleSheet.create({
        flexDirection: 'row',
        alignItems: 'center',
        paddingHorizontal: 20,
-       backgroundColor: '#F5DEB3',
+       backgroundColor: '#B2DFEEc0',
        borderTopLeftRadius: 30,
        borderTopRightRadius: 30
     },
     inputContainer: {
-        backgroundColor: '#228B22',
+        backgroundColor: '#7B68EE',
         elevation: 40,
         flex: 1,
         height: 50,
@@ -42,7 +42,7 @@ export const styles = StyleSheet.create({
         borderRadius: 25,
         height: 50,
         width: 50,
-        backgroundColor: '#228B22',
+        backgroundColor: '#7B68EE',
         elevation: 40,
         justifyContent: 'center',
         alignItems: 'center',
